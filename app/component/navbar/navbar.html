@@ -1,5 +1,6 @@
 <section class="navbar">
-
+  <div class="logo" src="../../assets/img/cf-logo.png"></div>
+  <h2>glgram</h2>
   <div uib-dropdown>
     <button type="button" name="button" class="btn btn-primary" uib-dropdown-toggle>Dropdown <span class="caret"></span></button>
 
@@ -8,11 +9,13 @@
       <li><a href="#">B link</a></li>
       <li><a href="#">C link</a></li>
       <li><a href="#">D link</a></li>
+      <li>
+        <div ng-hide="navbarCtrl.hideButtons">
+        <button class="btn-alt" ng-click="navbarCtrl.logout()">sign out</button></div>
+      </li>
     </ul>
   </div>
   <nav>
-    <div ng-hide="navbarCtrl.hideButtons">
-      <button class="btn-alt" ng-click="navbarCtrl.logout()">sign out</button>
-    </div>
+
   </nav>
 </section>
